@@ -1,0 +1,18 @@
+
+
+
+
+
+TELAS :
+
+TELA_DE_LOGIN.html = Filipe
+
+CADASTRO_USUARIO/Remoção_de_usuario.html = Filipe
+		
+CADASTRO_Produtos/Remoção_de_Produtos.html = Filipe
+
+Compra.html = Joao
+
+Venda.html = Joao
+
+Estoque.html = Joao
