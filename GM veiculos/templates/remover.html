@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="POST" action="/buscar_e_Excluir_Produto">
+
+        
+    {% if naoexiste_Produto == True %}
+
+        <h1> Digite um novo ID esse Produto não existe</h1>
+
+    
+    {% endif %}
+
+
+        <table>
+          <tr>
+            <th>Digite o ID do produto a ser excluído</th>
+            <td><input type="text" name="p_id"></td>
+          </tr>
+  
+        </table>
+  
+        <button type="submit">Excluir</button>
+      </form>
+
+
+      <form method="POST" action="/buscar_e_Excluir_User">
+
+        
+        {% if naoexiste_User == True %}
+    
+            <h1> Digite um novo ID esse User não existe</h1>
+    
+        
+        {% endif %}
+    
+    
+            <table>
+              <tr>
+                <th>Digite o ID do usuario a ser excluído</th>
+                <td><input type="text" name="u_id"></td>
+              </tr>
+      
+            </table>
+      
+            <button type="submit">Excluir</button>
+          </form>
+
+</body>
+</html>

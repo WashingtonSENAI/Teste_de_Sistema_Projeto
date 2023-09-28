@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <h1 style="color: white;margin-left: 40%;"> Produtos brabo e Usarios mt </h1>
+
+    <table>
+        <thead>
+            <tr> 
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            {% for produto in produtos %}
+                <tr>
+                    <td>Produto {{produto.p_id }} </td>
+                    <td>{{ produto.p_nome }}</td>
+                    <td>{{ produto.p_preco }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+  
+    <table>
+        <thead>
+            <tr> 
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            {% for usuario in usuarios %}
+                <tr>
+                    <td>Usuario {{usuario.u_id }} </td>
+                    <td>{{ usuario.u_nome }}</td>
+                    <td>{{ usuario.u_email}}</td>
+                    <td>{{ usuario.u_telefone }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+  
+
+
+
+
+</body>
+</html>
